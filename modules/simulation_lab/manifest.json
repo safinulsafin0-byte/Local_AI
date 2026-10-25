@@ -1,0 +1,17 @@
+{
+  "name": "simulation_lab",
+  "version": "1.0.0",
+  "display_name": "Stark Simulation Lab",
+  "description": "Scientific physics simulations (projectile trajectory with drag, heat diffusion, RLC electrical circuits, beam stress) and system integrity analysis.",
+  "enabled": true,
+  "routes_module": "modules.simulation_lab.routes",
+  "tools_module": "modules.simulation_lab.tools",
+  "capabilities": [
+    "projectile_simulation",
+    "heat_diffusion_simulation",
+    "rlc_circuit_simulation",
+    "beam_deflection_simulation",
+    "system_integrity_check"
+  ]
+}
+

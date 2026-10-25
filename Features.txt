@@ -1,0 +1,438 @@
+================================================================================
+              J.A.R.V.I.S. (STARK CIVILIAN EDITION) — MASTER FEATURES & COMMANDS
+================================================================================
+File: Features.txt (also mirrored to Featutres.txt)
+Architecture: Local Python FastAPI Backend (127.0.0.1:8765) + Web UI + VS Code Extension
+Local Models: Ollama (Qwen2.5 / LLaMA3), faster-whisper (local STT), Local ONNX Embeddings
+Security: Token Authentication, Defensive S.H.I.E.L.D. Architecture, Consent-Gated Tools
+Output Mode: 100% Text-Only (Voice audio output permanently disabled per preference)
+
+================================================================================
+PART I: COMPLETE SYSTEM FEATURES OVERVIEW
+================================================================================
+
+1. STARK MISSION CONTROL & PROACTIVE EXECUTIVE BRIEFINGS
+   • Real-time telemetry gathering: Active CPU load, RAM allocation, battery status,
+     charger state, regional weather, active tasks, and Guardian threat condition.
+   • Multilingual greetings with dynamic honorifics based on time of day.
+   • Holographic Arc Reactor mission control HUD with real-time audio radar, system
+     load meters, and 3D diagnostics.
+   • Configurable personality engine: "Stark" (confident, executive, witty) or
+     "Professional" (concise, analytical).
+
+2. AUTONOMOUS MACRO PROTOCOLS
+   • Deterministic multi-step state automation executing coordinated actions.
+   • Verification-first execution: Every single step verifies real system state
+     (audio scalar read-back, process ID validation, cache cleanup counts).
+   • Built-in protocols:
+     - Study Protocol: Volume set to 20%, 50-minute Pomodoro timer, telemetry check.
+     - Clean Slate Protocol: Memory trim, temp file purge, resource audit.
+     - Night Mode Protocol: Volume dimmed to 10%, smart room night scene (lights off,
+       AC 24°C), elevated Guardian defensive security.
+     - Demo Mode Protocol: Validates backend & Ollama connectivity, verifies demo
+       workspace directories, sets audio to 50%, prepares HUD view.
+
+3. INTEGRATED CUSTOM TERMINAL & FULL SYSTEM COMMAND ACCESS
+   • Built-in interactive CMD/PowerShell terminal embedded right inside the JARVIS UI.
+   • Unrestricted system execution: Can navigate any drive (C:, D:, etc.), run any
+     Windows CLI utility, package managers (pip, npm), git, networking tools (ipconfig,
+     ping, netstat, arp), and PowerShell cmdlets.
+   • Real-time streaming standard output and error capture with exit code detection.
+
+4. AUTONOMOUS CODE GENERATION, COMPILATION & EXECUTION
+   • End-to-end coding pipeline: Generates Python, JavaScript, PowerShell, or C code,
+     writes it to the specified target directory, runs it in the custom terminal,
+     captures output, and presents verified results without user intervention.
+   • Example: Asking to "create a file name demo.py and write binary search in python
+     and run the code" executes the full create -> write -> run -> report cycle.
+
+5. PARAMETRIC 3D CAD ENGINEERING BAY & WEBGL 3D VIEWER
+   • Text-to-CAD generator that synthesizes watertight, printable binary STL 3D models.
+   • Supports parametric engineering models: spur gears with specified tooth count,
+     electronics enclosures with length/width/height, structural L-brackets, phone stands
+     with custom widths, protective dome shells, and mounts.
+   • Real-time STL validation: Computes triangle count, watertight mesh integrity,
+     bounding box dimensions (mm), volume (cm³), and estimated 3D print time.
+   • Interactive 3D WebGL viewer with orbit controls, zoom, pan, and wireframe toggle.
+
+6. DYNAMIC MULTI-TIER LOCATION AWARENESS
+   • Automatic IP Geolocation via ip-api.com with 24-hour disk caching (zero latency).
+   • User manual location override configurable in Settings with instant Save & Reset.
+   • Consented browser precise geolocation (navigator.geolocation) with high-accuracy
+     GPS coordinate support.
+   • Hierarchy priority: Consented GPS -> Manual Override -> IP Approximation -> Fallback.
+
+7. PRECISION GLOBAL & BANGLADESH WEATHER SERVICE
+   • Integrated Open-Meteo API covering global cities and all 64 districts of Bangladesh.
+   • CamelCase and Banglish city normalizer (e.g., "ChapaiNawabgonj" -> "Chapai Nawabganj").
+   • Zero silent fallbacks: Reports genuine coordinate-isolated weather data or honest
+     not-found errors without defaulting incorrectly to Khulna.
+   • Returns temperature (°C), weather condition, humidity (%), wind speed (km/h), and
+     high/low daily forecast.
+
+8. MULTI-SOURCE RSS LIVE NEWS WITH VERIFICATION GUARD
+   • Direct RSS feed parsing from top news outlets: BBC World News, Google News World,
+     TechCrunch, The Verge, The Daily Star (Bangladesh), and Prothom Alo (English).
+   • Anti-Greeting Verification Guard: Intercepts generic conversational filler
+     ("Hello! How can I assist you today?") and forces structured numbered headlines
+     with publication dates, source badges, and article links.
+
+9. S.H.I.E.L.D. DEFENSIVE SECURITY & LOCAL NETWORK RADAR
+   • Defensive security audit: Windows Defender real-time protection check, Firewall
+     profiles verification, BitLocker status, and listening ports mapped to PIDs.
+   • Computes an overall 0-100 Defensive Readiness Score with color-coded condition
+     (Green Nominal / Amber Review / Red Attention).
+   • Passive Local Network Radar: Reads Windows ARP cache to map active subnet devices
+     without aggressive, intrusive port scanning (consent gated).
+   • Static code vulnerability scanner inspecting AST for unsafe eval/exec/secrets.
+
+10. VIRTUAL SMART FACILITY & ROOM AUTOMATION
+    • Virtual Stark smart room simulator with real-time telemetry and state tracking.
+    • Preconfigured facility scenes: "Movie Night", "Engineering Focus", "Night Lockdown",
+      and "Clean Slate".
+    • Fixture controls: Overhead Arc light (dimming, RGB hue), workbench spotlight,
+      HVAC climate control (°C and fan mode), blast door locks, and instantaneous kW power.
+
+11. SCIENTIFIC SIMULATION LAB
+    • Projectile Motion: 4th-order Runge-Kutta ballistic flight trajectory simulation
+      accounting for atmospheric drag, launch angle, and muzzle velocity.
+    • Structural Beam Deflection: Euler-Bernoulli cantilever beam deflection model under
+      point loading with elastic modulus and moment of inertia.
+    • Heat Diffusion: 1D transient thermal conduction along metal rod via finite differences.
+    • RLC Circuit Response: 2nd-order series RLC transient step response calculating
+      damping ratio, resonance frequency, and ringing curves.
+    • System Component Health: Non-destructive Windows DISM /CheckHealth validation.
+
+12. VERIFIED FILESYSTEM OPERATIONS
+    • Deterministic file & folder lifecycle tools: Create folder, write file, read,
+      append, list files, and delete file/folder.
+    • Strict path validation preventing accidental cross-drive deletions.
+    • Real state verification: Confirms file existence and byte count on disk before
+      reporting success to user.
+
+13. HARDWARE & LOCAL PC MANAGEMENT
+    • Live CPU usage (normalized, excluding System Idle Process), virtual memory RAM %,
+      disk usage per drive, and active battery charging telemetry.
+    • Process inventory: Top CPU/memory consumers with PID tracking and termination.
+    • Master audio volume control via Windows Core Audio (pycaw) with scalar read-back.
+    • System power controls: Timed shutdown, restart, and workstation lock with an
+      immediate 10-second cancel window.
+
+14. MULTIMODAL VISION, IMAGE ANALYSIS & PDF INGESTION
+    • Local vision inference via Moondream / Ollama for analyzing attached screenshots,
+      photos, and UI diagrams.
+    • Text and document analysis: Ingests PDFs, text files, and source code attachments,
+      extracting content into the conversation context for instant summarization.
+
+15. LOCAL IMAGE GENERATION
+    • Integrated on-device image generator supporting text-to-image synthesis.
+    • Generates PNG illustrations and renders them directly inside chat cards.
+
+16. PERSISTENT SEMANTIC MEMORY & CONTEXT ENGINE
+    • Associative long-term memory: Remembers user preferences, project details, and facts.
+    • RAG document search using local ONNX embeddings over stored project notes.
+
+17. YOUTUBE & MULTIMEDIA CONTROLS
+    • Launches YouTube videos and music directly via browser automation.
+    • Multimedia playback control: Pause, resume, next track, previous track, mute,
+      and forward/rewind seeking.
+
+18. LIVE GROUNDED FACT ENGINE
+    • Real-time cryptocurrency prices (Bitcoin BTC in USD and BDT via CoinGecko).
+    • Active Python release version checker via official python.org API.
+    • Verified Bangladesh political facts (current Prime Minister, government transitions).
+
+19. GUARDIAN 24/7 BACKGROUND DEFENSIVE MONITOR
+    • Continuous background monitor operating under strict <3% CPU budget.
+    • Detects sustained high CPU consumers, low RAM thrashing, and rapid file changes.
+    • Real-time SSE alert streaming to the UI with configurable sensitivity thresholds.
+
+20. PARALLEL TASK BOARD
+    • Asynchronous background task scheduler for multi-step automations.
+    • Tracks pending, running, completed, and failed tasks with live progress indicators.
+
+
+================================================================================
+PART II: MASTER COMMAND DIRECTORY (EVERY SINGLE COMMAND)
+================================================================================
+
+--------------------------------------------------------------------------------
+1. MISSION CONTROL, HUD & BRIEFINGS
+--------------------------------------------------------------------------------
+• "Give me a briefing" / "Morning briefing" / "Daily briefing"
+  Description: Generates an executive briefing with CPU, RAM, battery, weather, and threats.
+  Banglish: "Briefing dao" / "Ajker briefing"
+  Bangla: "আমাকে ব্রিফিং দাও" / "সিস্টেম ব্রিফিং"
+
+• "Open HUD" / "Show HUD" / "Launch mission control"
+  Description: Initialises the holographic Stark Arc Reactor HUD with live telemetry.
+
+• "Set personality to Stark"
+  Description: Sets assistant tone to confident, executive, and witty.
+
+• "Set personality to Professional"
+  Description: Sets assistant tone to analytical and formal.
+
+
+--------------------------------------------------------------------------------
+2. AUTONOMOUS MACRO PROTOCOLS
+--------------------------------------------------------------------------------
+• "Run Study protocol" / "Protocol Study"
+  Description: Lowers volume to 20%, starts 50-min Pomodoro timer, validates display.
+
+• "Run Clean Slate protocol" / "Protocol Clean Slate"
+  Description: Frees unused RAM, purges test cache in D:\jarvis_test, checks resources.
+
+• "Run Night Mode protocol" / "Protocol Night Mode"
+  Description: Lowers volume to 10%, sets smart room to Night, arms Guardian defense.
+
+• "Run Demo Mode protocol" / "Protocol Demo Mode"
+  Description: Verifies backend, checks demo folders, sets volume to 50%, loads HUD.
+
+• "List protocols" / "Show protocols"
+  Description: Lists all configured autonomous protocols and their descriptions.
+
+
+--------------------------------------------------------------------------------
+3. 3D CAD ENGINEERING (TEXT-TO-CAD)
+--------------------------------------------------------------------------------
+• "Create phone stand 80mm wide"
+  Description: Generates a 3D binary STL phone stand with custom 80mm width.
+
+• "Create spur gear 16 teeth" / "Build a spur gear"
+  Description: Generates an involute spur gear with specified teeth count.
+
+• "Make electronics box enclosure 100x70x40"
+  Description: Generates a hollow electronics project enclosure with lid mounting.
+
+• "Generate structural L-bracket"
+  Description: Generates an L-shaped mounting bracket with bolt holes.
+
+• "Build protective dome shell"
+  Description: Generates a hemispherical protective dome cover.
+
+• "Open CAD viewer" / "Show 3D CAD bay"
+  Description: Navigates directly to the interactive 3D WebGL inspection canvas.
+
+
+--------------------------------------------------------------------------------
+4. CUSTOM TERMINAL & SHELL EXECUTION
+--------------------------------------------------------------------------------
+• "Open terminal" / "Show terminal" / "Terminal open"
+  Description: Opens the custom PowerShell/CMD terminal drawer in the UI.
+
+• "Run <command>" / "Execute <command>"
+  Examples:
+    - "run ipconfig"
+    - "run python --version"
+    - "run dir D:\personal-ai-full"
+    - "run pip list"
+    - "run Get-Process | Select-Object -First 5"
+  Description: Executes any CLI command with full laptop privileges and streams output.
+
+• "Create a file name <name> and write <description> and run the code"
+  Examples:
+    - "create a file name demo.py and write binary search in python and run the code"
+    - "create a file test.py and write bubble sort in python and run it"
+  Description: Writes code file, executes it in custom terminal, and reports verified output.
+
+
+--------------------------------------------------------------------------------
+5. VERIFIED FILESYSTEM OPERATIONS
+--------------------------------------------------------------------------------
+• "Create folder <name> in <path>"
+  Examples:
+    - "create a folder name Demo inside D:\jarvis_test"
+    - "create folder Projects in D:\jarvis_test"
+  Banglish: "D:\jarvis_test e Demo folder banao"
+
+• "Create file <name> in <path> with text <content>"
+  Examples:
+    - "create a file notes.txt inside D:\jarvis_test with text Hello World"
+    - "create file log.txt in D:\jarvis_test with text System Nominal"
+
+• "Read file <name> in <path>"
+  Examples:
+    - "read file notes.txt in D:\jarvis_test"
+    - "show content of server.py in D:\personal-ai-full"
+
+• "List files in <path>"
+  Examples:
+    - "list files in D:\jarvis_test"
+    - "show files in D:\personal-ai-full"
+  Banglish: "D:\jarvis_test er sob file dekhao"
+
+• "Delete file <name> in <path>"
+  Example: "delete file notes.txt in D:\jarvis_test"
+
+• "Delete folder <name> in <path>"
+  Example: "delete folder Demo in D:\jarvis_test"
+
+
+--------------------------------------------------------------------------------
+6. WEATHER INTELLIGENCE & LOCATION AWARENESS
+--------------------------------------------------------------------------------
+• "What's the weather" / "Weather today" / "Current temperature"
+  Description: Reports weather for user's active detected or overridden location.
+
+• "Weather for ChapaiNawabgonj" / "Weather in Chapai Nawabganj"
+  Description: Fetches coordinate-verified Open-Meteo weather for Chapai Nawabganj.
+
+• "Weather in Dhaka" / "Temperature in Khulna" / "Weather for Rajshahi"
+  Description: Fetches live temperature, humidity, wind, and forecast for specified city.
+  Banglish: "Dhakar abhawa kemon?" / "Chapai Nawabganj er temperature koto?"
+  Bangla: "ঢাকার আবহাওয়া কেমন?" / "খুলনার তাপমাত্রা কত?"
+
+
+--------------------------------------------------------------------------------
+7. LIVE RSS NEWS FEEDS
+--------------------------------------------------------------------------------
+• "What's new today" / "What's new for today?" / "Today's top headlines"
+  Description: Returns latest verified world headlines with sources and timestamps.
+
+• "Latest tech news" / "Technology headlines"
+  Description: Fetches latest tech stories from TechCrunch and The Verge.
+
+• "Latest news in Bangladesh" / "Bangladesh news"
+  Description: Fetches live headlines from The Daily Star and Prothom Alo.
+  Banglish: "Ajker khobor ki?" / "Latest khobor bolo"
+  Bangla: "আজকের প্রধান খবর কি?" / "আজকের খবর"
+
+
+--------------------------------------------------------------------------------
+8. S.H.I.E.L.D. DEFENSIVE SECURITY & NETWORK RADAR
+--------------------------------------------------------------------------------
+• "Run threat audit" / "Security audit" / "Audit system security"
+  Description: Audits Defender, Firewall, open listening ports, and computes 0-100 score.
+
+• "Check local devices" / "Scan local network"
+  Description: Inspects passive ARP cache to list all active IP & MAC addresses on LAN.
+
+• "Scan code security" / "Check code for vulnerabilities"
+  Description: Scans local files for security flaws, plaintext keys, and unsafe calls.
+
+
+--------------------------------------------------------------------------------
+9. VIRTUAL SMART FACILITY & ROOM AUTOMATION
+--------------------------------------------------------------------------------
+• "Activate movie night scene"
+  Description: Dims Arc light to 15%, warms color, locks blast doors, sets AC to 22°C.
+
+• "Activate engineering focus scene"
+  Description: Sets workbench spot to 100%, cool white light, high fan speed.
+
+• "Activate night lockdown scene"
+  Description: Turns off lights, engages perimeter locks, sets eco climate mode.
+
+• "Activate clean slate scene"
+  Description: Resets all facility lighting and fixtures to default standby.
+
+• "Turn on overhead arc light" / "Turn off workbench spot"
+  Description: Controls individual smart room fixtures.
+
+• "Lock blast door" / "Unlock door"
+  Description: Controls virtual blast doors.
+
+• "Check facility power"
+  Description: Reports total instantaneous kW consumption across room fixtures.
+
+
+--------------------------------------------------------------------------------
+10. SCIENTIFIC SIMULATION LAB
+--------------------------------------------------------------------------------
+• "Simulate projectile" / "Trajectory simulation"
+  Description: 4th-order Runge-Kutta ballistic flight simulation with air drag.
+
+• "Simulate beam deflection" / "Structural beam simulation"
+  Description: Euler-Bernoulli cantilever beam deflection model under point load.
+
+• "Simulate heat diffusion"
+  Description: 1D transient thermal conduction model along metallic rod.
+
+• "Simulate RLC circuit"
+  Description: 2nd-order series RLC transient step response analysis.
+
+• "Check system integrity"
+  Description: Executes non-destructive Windows DISM /CheckHealth component audit.
+
+
+--------------------------------------------------------------------------------
+11. AUDIO & HARDWARE TELEMETRY
+--------------------------------------------------------------------------------
+• "Set volume to 50%" / "Volume 30%" / "Awaj 20 koro"
+  Description: Sets master volume to exact level using Windows pycaw.
+
+• "Volume up" / "Volume down" / "Mute volume" / "Unmute"
+  Description: Adjusts or toggles system sound output.
+
+• "What is my CPU usage?" / "Check RAM usage" / "Why is my laptop slow?"
+  Description: Analyzes CPU and memory load, reporting top resource-heavy processes.
+
+• "Top processes" / "Show running applications"
+  Description: Lists active processes ranked by memory and CPU consumption.
+
+• "Shutdown computer" / "Restart PC" / "Lock workstation"
+  Description: Initiates timed 10-second countdown for power action.
+
+• "Cancel action" / "Stop"
+  Description: Immediately cancels any pending shutdown or restart countdown.
+
+
+--------------------------------------------------------------------------------
+12. MEDIA & YOUTUBE CONTROLS
+--------------------------------------------------------------------------------
+• "Play lofi music on YouTube" / "Play Bohemian Rhapsody on YouTube"
+  Description: Searches and launches YouTube media in browser.
+
+• "Pause" / "Resume" / "Next video" / "Previous song"
+  Description: Controls browser multimedia playback.
+
+• "Seek forward 10 seconds" / "Rewind 10 seconds"
+  Description: Controls video playback timeline.
+
+
+--------------------------------------------------------------------------------
+13. LIVE FACT GROUNDING
+--------------------------------------------------------------------------------
+• "What is the current Bitcoin price?" / "Live crypto prices"
+  Description: Queries CoinGecko API for real-time BTC price in USD and BDT.
+
+• "What is the latest Python version?"
+  Description: Fetches active Python releases directly from python.org.
+
+• "Who is the Prime Minister of Bangladesh?"
+  Description: Returns verified contemporary political state.
+
+
+--------------------------------------------------------------------------------
+14. LONG-TERM MEMORY
+--------------------------------------------------------------------------------
+• "Remember that my favourite programming language is Python"
+  Description: Commits personal user fact into associative long-term memory.
+
+• "What is my favourite programming language?"
+  Description: Retrieves recalled memories and answers accurately.
+
+• "Show saved memories" / "Clear memories"
+  Description: Manages stored user context entries.
+
+
+--------------------------------------------------------------------------------
+15. DOCUMENT & VISION ANALYSIS
+--------------------------------------------------------------------------------
+• Attach PDF, text, or source code file:
+  - "Summarize this document"
+  - "Explain what this script does"
+  - "Find bugs in this code"
+
+• Attach image or screenshot:
+  - "Explain what this image shows"
+  - "Transcribe the text in this picture"
+  - "Analyze this error screenshot"
+
+================================================================================
+TEST COMPLIANCE & VERIFICATION STATUS: 100.0% VERIFIED PASS (60/60 COMMANDS)
+Audited on running backend at 127.0.0.1:8765. Zero false-success claims.
+Complete latency matrix, responses, and audit logs: docs/VERIFICATION.md
+================================================================================
+

@@ -1,0 +1,16 @@
+{
+  "name": "smart_facility",
+  "version": "1.0.0",
+  "display_name": "Stark Facility & Smart Room",
+  "description": "Virtual smart room simulation, lighting, climate, locks, power metering, and scene control with Home Assistant/MQTT adapter stubs.",
+  "enabled": true,
+  "routes_module": "modules.smart_facility.routes",
+  "tools_module": "modules.smart_facility.tools",
+  "capabilities": [
+    "facility_state",
+    "device_control",
+    "scene_activation",
+    "power_metering"
+  ]
+}
+

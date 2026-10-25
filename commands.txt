@@ -1,0 +1,176 @@
+================================================================================
+          J.A.R.V.I.S. (STARK EDITION) — MASTER COMMAND DIRECTORY
+================================================================================
+This file lists all the voice and text commands supported by JARVIS across
+system control, coding, 3D CAD engineering, facility automation, and defense.
+Commands work in English, Bangla script (বাংলা), and Banglish.
+
+--------------------------------------------------------------------------------
+1. ⚡ STARK MISSION CONTROL & PROACTIVE BRIEFINGS
+--------------------------------------------------------------------------------
+• "Give me a briefing" / "Morning briefing" / "Daily briefing"
+  -> Gathers real-time CPU, RAM, battery status, weather, and threat level into
+     an executive status report.
+• "Brief me" / "System briefing" / "JARVIS briefing"
+• "Set personality to Stark" / "Set personality to Professional" / "Friendly mode"
+  -> Switches JARVIS's tone and response personality.
+• "Open HUD" / "Show HUD" / "Launch mission control"
+  -> Opens the holographic HUD view with the animated Arc Reactor and telemetry.
+
+--------------------------------------------------------------------------------
+2. 🛡️ AUTONOMOUS PROTOCOLS
+--------------------------------------------------------------------------------
+• "Run Study protocol" / "Protocol Study"
+  -> Lowers volume to 20%, minimizes distractions, sets a 50-minute study timer,
+     and validates system memory.
+• "Run Clean Slate protocol" / "Protocol Clean Slate"
+  -> Clears cache, cleans temp files, runs garbage collection, and resets systems.
+• "Run Night Mode protocol" / "Protocol Night Mode"
+  -> Dims volume to 10%, locks facility doors, sets thermostat to 24°C, and arms
+     Guardian defensive security.
+• "Run Demo Mode protocol" / "Protocol Demo Mode"
+  -> Prepares demo folders, checks Ollama connectivity, sets volume to 50%, and
+     opens the HUD.
+• "List protocols" / "Show protocols"
+  -> Lists all configured autonomous protocols.
+
+--------------------------------------------------------------------------------
+3. 📐 3D ENGINEERING BAY (PARAMETRIC TEXT-TO-CAD)
+--------------------------------------------------------------------------------
+• "Create phone stand 80mm wide"
+  -> Generates a watertight 3D binary STL mesh file and renders it in the 3D viewer.
+• "Build a spur gear" / "Create spur gear 16 teeth"
+• "Make an electronics box enclosure 100x70x40"
+• "Generate structural L-bracket"
+• "Build protective dome shell"
+• "Show 3D CAD bay" / "Open CAD viewer"
+  -> Switches to the 3D CAD canvas with mouse-drag rotation, zoom, and wireframe.
+
+--------------------------------------------------------------------------------
+4. 💻 CUSTOM TERMINAL & CODE EXECUTION
+--------------------------------------------------------------------------------
+• "Open terminal" / "Show terminal" / "Terminal open"
+  -> Opens the integrated custom PowerShell/CMD terminal in the JARVIS UI.
+• "Run command <cmd>" / "execute <cmd>" / "<cmd>"
+  -> Runs any shell command with full laptop and drive access.
+  Examples:
+    - "run python --version"
+    - "run ipconfig"
+    - "run dir D:\personal-ai-full"
+    - "pip install requests"
+    - "Get-Process | Select-Object -First 5"
+• Compound Code Creation & Execution:
+  - "create a file name demo.py and write binary search in python and run the code"
+  - "create a file test.py and write bubble sort and run it"
+  -> Automatically writes clean, runnable code, saves it to disk, executes it
+     inside the custom terminal, and reports the verified output.
+
+--------------------------------------------------------------------------------
+5. 📂 FILESYSTEM & DIRECTORY OPERATIONS (VERIFIED)
+--------------------------------------------------------------------------------
+• Create Folder:
+  - "create a folder name Demo inside D:\jarvis_test"
+  - "create folder 'Projects' in D:\jarvis_test"
+  - "D:\jarvis_test e Demo2 folder banao" (Banglish)
+• Create / Write File:
+  - "create a file notes.txt inside D:\jarvis_test with text Hello World"
+  - "write 'System Nominal' to log.txt on desktop"
+• Read File:
+  - "read file notes.txt in D:\jarvis_test"
+  - "show content of config.json"
+• List Files:
+  - "list files in D:\jarvis_test"
+  - "show files on desktop"
+• Delete File / Folder:
+  - "delete file notes.txt in D:\jarvis_test"
+  - "delete folder Demo in D:\jarvis_test"
+  -> Verifies paths safely; never confuses folder name with parent location.
+
+--------------------------------------------------------------------------------
+6. 🛡️ S.H.I.E.L.D. DEFENSIVE SECURITY & NETWORK AUDIT
+--------------------------------------------------------------------------------
+• "Run threat audit" / "Security audit" / "Audit system security"
+  -> Inspects Windows Defender, Firewall profiles, BitLocker, and open listening
+     ports mapped to process PIDs; calculates a 0-100 Readiness Score.
+• "Scan local network" / "Check local devices"
+  -> Safely reads the system ARP cache to list active LAN devices (consent required).
+• "Scan code security" / "Check code for vulnerabilities"
+  -> Scans files for dangerous patterns (`eval`, `exec`, `shell=True`, plain secrets).
+
+--------------------------------------------------------------------------------
+7. 🏛️ VIRTUAL SMART FACILITY & ROOM AUTOMATION
+--------------------------------------------------------------------------------
+• "Activate movie night scene" / "Set scene movie night"
+  -> Dims Arc light to 15%, warms hue, locks blast doors, adjusts HVAC AC.
+• "Activate engineering focus scene" / "Deep focus scene"
+  -> Sets workbench spot to 100%, cool white light, high ventilation fan.
+• "Activate night lockdown scene"
+  -> Shuts off all lighting, locks perimeters, sets eco climate mode.
+• "Activate clean slate scene"
+  -> Resets fixtures to standby baseline.
+• "Turn on overhead arc light" / "Turn off workbench spot"
+• "Lock blast door" / "Unlock door"
+• "Check facility power" -> Reports instantaneous kW consumption load.
+
+--------------------------------------------------------------------------------
+8. 🔬 SCIENTIFIC SIMULATION LAB
+--------------------------------------------------------------------------------
+• "Simulate projectile" / "Trajectory simulation"
+  -> 4th-order Runge-Kutta numerical integration of ballistic flight with drag.
+• "Simulate beam deflection" / "Structural beam simulation"
+  -> Euler-Bernoulli cantilever beam deflection under point load.
+• "Simulate heat diffusion"
+  -> 1D transient thermal conduction along metal rod via finite differences.
+• "Simulate RLC circuit"
+  -> 2nd-order series RLC transient step response (damping ratio, ringing curve).
+• "Check system integrity"
+  -> Executes Windows DISM /CheckHealth non-destructive component store check.
+
+--------------------------------------------------------------------------------
+9. 🔊 AUDIO & SYSTEM HARDWARE CONTROL
+--------------------------------------------------------------------------------
+• "Set volume to 50%" / "Volume 70%" / "Awaj 40 koro"
+• "Volume up" / "Volume down" / "Mute volume" / "Unmute"
+• "What is my CPU usage?" / "Check RAM usage" / "Why is my laptop slow?"
+• "Top processes" / "Show running apps"
+• "Set power mode to high performance" / "Set power mode to balanced"
+• "Shutdown computer" / "Restart PC" / "Lock workstation" (10-second countdown)
+• "Cancel action" / "Stop" -> Aborts pending countdowns immediately.
+
+--------------------------------------------------------------------------------
+10. 🎵 YOUTUBE & MEDIA CONTROLS
+--------------------------------------------------------------------------------
+• "Play lofi music on YouTube"
+• "Play Bohemian Rhapsody on YouTube"
+• "Pause" / "Resume" / "Next video" / "Mute YouTube"
+• "Seek forward 10 seconds" / "Rewind 10 seconds"
+
+--------------------------------------------------------------------------------
+11. 🌐 LIVE WEB SEARCH, WEATHER & FACTS
+--------------------------------------------------------------------------------
+• "What is the weather in Khulna?" / "Dhakar abhawa kemon?"
+• "Latest news today" / "Tech news" / "Ajker khobor"
+• "What is the current Bitcoin price?" / "Live crypto prices"
+• "What is the latest Python version?"
+• "Who is the Prime Minister of Bangladesh?"
+• "What is the capital of France?"
+
+--------------------------------------------------------------------------------
+12. 🧠 MEMORY & CONTEXT
+--------------------------------------------------------------------------------
+• "Remember that my favourite programming language is Python"
+• "What is my favourite programming language?"
+• "Show saved memories" / "Clear memories"
+
+--------------------------------------------------------------------------------
+13. 📄 ATTACHMENTS & DOCUMENT ANALYSIS
+--------------------------------------------------------------------------------
+• Attach PDF, image, or text file via UI clip button or drag-and-drop:
+  - "Summarize this PDF"
+  - "Explain what this image shows"
+  - "Review this code for errors"
+
+================================================================================
+               ALL SYSTEMS VERIFIED & 100% OPERATIONAL
+================================================================================
+

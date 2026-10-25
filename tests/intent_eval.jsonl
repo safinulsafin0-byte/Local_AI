@@ -1,0 +1,121 @@
+{"text": "play bohemian rhapsody on youtube", "expected_intent": "youtube_play", "language": "en", "expected_risk": "low"}
+{"text": "search lofi chill beats on youtube", "expected_intent": "youtube_play", "language": "en", "expected_risk": "low"}
+{"text": "play taylor swift blank space", "expected_intent": "youtube_play", "language": "en", "expected_risk": "low"}
+{"text": "play pink floyd comfortably numb", "expected_intent": "youtube_play", "language": "en", "expected_risk": "low"}
+{"text": "pause the video", "expected_intent": "youtube_control", "language": "en", "expected_risk": "low"}
+{"text": "resume video", "expected_intent": "youtube_control", "language": "en", "expected_risk": "low"}
+{"text": "skip to next track", "expected_intent": "youtube_control", "language": "en", "expected_risk": "low"}
+{"text": "go to previous song", "expected_intent": "youtube_control", "language": "en", "expected_risk": "low"}
+{"text": "what is the weather in London today?", "expected_intent": "weather", "language": "en", "expected_risk": "low"}
+{"text": "will it rain in New York tomorrow?", "expected_intent": "weather", "language": "en", "expected_risk": "low"}
+{"text": "Tokyo temperature right now", "expected_intent": "weather", "language": "en", "expected_risk": "low"}
+{"text": "show me the weather forecast", "expected_intent": "weather", "language": "en", "expected_risk": "low"}
+{"text": "what are the latest world news headlines?", "expected_intent": "news", "language": "en", "expected_risk": "low"}
+{"text": "today's breaking news about tech", "expected_intent": "news", "language": "en", "expected_risk": "low"}
+{"text": "who won the premier league match yesterday?", "expected_intent": "web_search", "language": "en", "expected_risk": "low"}
+{"text": "current stock price of Nvidia", "expected_intent": "web_search", "language": "en", "expected_risk": "low"}
+{"text": "what is the capital of Australia?", "expected_intent": "web_search", "language": "en", "expected_risk": "low"}
+{"text": "latest updates on space missions", "expected_intent": "web_search", "language": "en", "expected_risk": "low"}
+{"text": "turn the volume up", "expected_intent": "system_control", "language": "en", "expected_risk": "low"}
+{"text": "volume down please", "expected_intent": "system_control", "language": "en", "expected_risk": "low"}
+{"text": "set volume to 40 percent", "expected_intent": "system_control", "language": "en", "expected_risk": "low"}
+{"text": "mute sound", "expected_intent": "system_control", "language": "en", "expected_risk": "low"}
+{"text": "unmute sound", "expected_intent": "system_control", "language": "en", "expected_risk": "low"}
+{"text": "what time is it right now?", "expected_intent": "system_control", "language": "en", "expected_risk": "low"}
+{"text": "what is today's date?", "expected_intent": "system_control", "language": "en", "expected_risk": "low"}
+{"text": "lock my pc", "expected_intent": "system_control", "language": "en", "expected_risk": "medium"}
+{"text": "shut down my computer", "expected_intent": "system_control", "language": "en", "expected_risk": "high"}
+{"text": "restart my pc", "expected_intent": "system_control", "language": "en", "expected_risk": "high"}
+{"text": "put pc to sleep", "expected_intent": "system_control", "language": "en", "expected_risk": "high"}
+{"text": "show cpu and ram usage", "expected_intent": "pc_status", "language": "en", "expected_risk": "low"}
+{"text": "why is my pc running slow?", "expected_intent": "pc_status", "language": "en", "expected_risk": "low"}
+{"text": "check system memory usage", "expected_intent": "pc_status", "language": "en", "expected_risk": "low"}
+{"text": "open notepad", "expected_intent": "app_control", "language": "en", "expected_risk": "low"}
+{"text": "launch chrome browser", "expected_intent": "app_control", "language": "en", "expected_risk": "low"}
+{"text": "open calculator", "expected_intent": "app_control", "language": "en", "expected_risk": "low"}
+{"text": "close notepad", "expected_intent": "app_control", "language": "en", "expected_risk": "medium"}
+{"text": "generate an image of a cybernetic tiger in neon forest", "expected_intent": "image_generate", "language": "en", "expected_risk": "low"}
+{"text": "draw a photo of a cozy coffee shop in rain", "expected_intent": "image_generate", "language": "en", "expected_risk": "low"}
+{"text": "how do I write a binary search in Python?", "expected_intent": "code_help", "language": "en", "expected_risk": "low"}
+{"text": "good morning Jarvis how are you doing today?", "expected_intent": "chat", "language": "en", "expected_risk": "low"}
+{"text": "bangla lofi gaan chalao", "expected_intent": "youtube_play", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "youtube e arijit singh er gan play koro", "expected_intent": "youtube_play", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "rabindra sangeet chalao", "expected_intent": "youtube_play", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "habib wahid er new song chalao", "expected_intent": "youtube_play", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "gan thamo", "expected_intent": "youtube_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "pause koro", "expected_intent": "youtube_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "abar chalao", "expected_intent": "youtube_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "porerta chalao", "expected_intent": "youtube_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "ager gan ta chalao", "expected_intent": "youtube_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "khulna te ajker weather kemon?", "expected_intent": "weather", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "dhaka te brishti hobe ki?", "expected_intent": "weather", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "ajker temperature koto?", "expected_intent": "weather", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "kalke brishti hobe ki na bolo", "expected_intent": "weather", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "ajker khobor ki", "expected_intent": "news", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "bangladesh er latest news ki?", "expected_intent": "news", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "kheladhular khobor dekhaw", "expected_intent": "news", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "volume ektu baraw", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "volume komaw", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "awaj bondho koro", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "sound 50 percent koro", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "koita baje bolo to", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "ajke ki bar ar tarikh koto?", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "pc bondho koro", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "high"}
+{"text": "computer restart koro", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "high"}
+{"text": "screen lock koro", "expected_intent": "system_control", "language": "bn_banglish", "expected_risk": "medium"}
+{"text": "ram usage koto ekhon?", "expected_intent": "pc_status", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "pc slow keno lagche?", "expected_intent": "pc_status", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "chrome browser khulo", "expected_intent": "app_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "notepad khulo", "expected_intent": "app_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "calculator khulo", "expected_intent": "app_control", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "notepad bondho koro", "expected_intent": "app_control", "language": "bn_banglish", "expected_risk": "medium"}
+{"text": "ekta shundor paharer chobi banao", "expected_intent": "image_generate", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "shurjodoyer chobi create koro", "expected_intent": "image_generate", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "bangladesh er prothom rastropoti ke chilen?", "expected_intent": "web_search", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "ajker gold price koto gram e?", "expected_intent": "web_search", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "kemon acho jarvis?", "expected_intent": "chat", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "tumi ki kaj korte paro?", "expected_intent": "chat", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "amake ekta golpo shonao", "expected_intent": "chat", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "python e for loop kemne likhe?", "expected_intent": "code_help", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "500 taka ke dollar e convert koro", "expected_intent": "math", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "একটি সুন্দর রবীন্দ্রসংগীত বাজাও", "expected_intent": "youtube_play", "language": "bn_script", "expected_risk": "low"}
+{"text": "বাংলা গান চালাও", "expected_intent": "youtube_play", "language": "bn_script", "expected_risk": "low"}
+{"text": "গান বন্ধ করো", "expected_intent": "youtube_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "আবার চালু করো", "expected_intent": "youtube_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "পরের গানটি চালাও", "expected_intent": "youtube_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "আগের গানে ফিরে যাও", "expected_intent": "youtube_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "ঢাকার আজকের আবহাওয়া কেমন?", "expected_intent": "weather", "language": "bn_script", "expected_risk": "low"}
+{"text": "খুলনায় কি আজ বৃষ্টি হবে?", "expected_intent": "weather", "language": "bn_script", "expected_risk": "low"}
+{"text": "আজকের তাপমাত্রা কত?", "expected_intent": "weather", "language": "bn_script", "expected_risk": "low"}
+{"text": "আজকের প্রধান খবর কী?", "expected_intent": "news", "language": "bn_script", "expected_risk": "low"}
+{"text": "আন্তর্জাতিক সংবাদ দেখাও", "expected_intent": "news", "language": "bn_script", "expected_risk": "low"}
+{"text": "শব্দ কিছুটা বাড়াও", "expected_intent": "system_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "ভলিউম কমাও", "expected_intent": "system_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "নিঃশব্দ করো", "expected_intent": "system_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "এখন কয়টা বাজে?", "expected_intent": "system_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "আজকের তারিখ কত?", "expected_intent": "system_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "কম্পিউটার বন্ধ করো", "expected_intent": "system_control", "language": "bn_script", "expected_risk": "high"}
+{"text": "কম্পিউটার রিস্টার্ট দাও", "expected_intent": "system_control", "language": "bn_script", "expected_risk": "high"}
+{"text": "স্ক্রিন লক করো", "expected_intent": "system_control", "language": "bn_script", "expected_risk": "medium"}
+{"text": "পিসি কেমন চলছে? র‍্যাম কত ব্যবহার হচ্ছে?", "expected_intent": "pc_status", "language": "bn_script", "expected_risk": "low"}
+{"text": "নোটপ্যাড খোলো", "expected_intent": "app_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "ক্যালকুলেটর খোলো", "expected_intent": "app_control", "language": "bn_script", "expected_risk": "low"}
+{"text": "নোটপ্যাড বন্ধ করো", "expected_intent": "app_control", "language": "bn_script", "expected_risk": "medium"}
+{"text": "নদীর তীরের একটি ছবি আঁকো", "expected_intent": "image_generate", "language": "bn_script", "expected_risk": "low"}
+{"text": "বাংলাদেশের জনসংখ্যা কত?", "expected_intent": "web_search", "language": "bn_script", "expected_risk": "low"}
+{"text": "বিশ্বকাপ ক্রিকেট কে জিতেছে?", "expected_intent": "web_search", "language": "bn_script", "expected_risk": "low"}
+{"text": "তুমি কেমন আছো জারভিস?", "expected_intent": "chat", "language": "bn_script", "expected_risk": "low"}
+{"text": "আমাকে সাহায্য করো", "expected_intent": "chat", "language": "bn_script", "expected_risk": "low"}
+{"text": "পাইথনে লিস্ট কিভাবে সর্ট করে?", "expected_intent": "code_help", "language": "bn_script", "expected_risk": "low"}
+{"text": "২৫ গুণন ৪০ কত হয়?", "expected_intent": "math", "language": "bn_script", "expected_risk": "low"}
+{"text": "apple", "expected_intent": "web_search", "language": "en", "expected_risk": "low"}
+{"text": "what", "expected_intent": "chat", "language": "en", "expected_risk": "low"}
+{"text": "hmm", "expected_intent": "chat", "language": "en", "expected_risk": "low"}
+{"text": "maybe", "expected_intent": "chat", "language": "en", "expected_risk": "low"}
+{"text": "ok", "expected_intent": "chat", "language": "en", "expected_risk": "low"}
+{"text": "ki bolo", "expected_intent": "chat", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "achha", "expected_intent": "chat", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "thik ache", "expected_intent": "chat", "language": "bn_banglish", "expected_risk": "low"}
+{"text": "আচ্ছা ঠিক আছে", "expected_intent": "chat", "language": "bn_script", "expected_risk": "low"}
+{"text": "বলো শুনি", "expected_intent": "chat", "language": "bn_script", "expected_risk": "low"}
+

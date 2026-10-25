@@ -1,0 +1,59 @@
+{
+  "id": "cad_engineering",
+  "name": "Stark Engineering Bay",
+  "description": "Parametric text-to-CAD generator with 3D STL manufacturing export, hardware suit diagnostics, and power rerouting.",
+  "version": "1.0.0",
+  "enabled": true,
+  "risk_level": "medium",
+  "permissions": ["filesystem_write", "powercfg", "system_diagnostics"],
+  "resource_cost": {
+    "ram_mb": 45,
+    "cpu_percent": 1.5
+  },
+  "tools": [
+    "generate_cad_model",
+    "list_cad_templates",
+    "run_hardware_diagnostics",
+    "reroute_system_power"
+  ],
+  "intents": [
+    "cad_generation",
+    "hardware_diagnostics",
+    "power_rerouting"
+  ],
+  "keywords": {
+    "cad_generation": [
+      "cad",
+      "stl",
+      "3d model",
+      "text to cad",
+      "phone stand",
+      "enclosure",
+      "bracket",
+      "gear",
+      "flange",
+      "৩ডি মডেল",
+      "সিএডি",
+      "ফোন স্ট্যান্ড"
+    ],
+    "hardware_diagnostics": [
+      "suit diagnostics",
+      "hardware diagnostics",
+      "hardware report",
+      "battery health",
+      "disk health",
+      "diagnostics",
+      "হার্ডওয়্যার ডায়াগনস্টিক",
+      "ব্যাটারি স্বাস্থ্য"
+    ],
+    "power_rerouting": [
+      "reroute power",
+      "power plan",
+      "battery saver",
+      "high performance power",
+      "পাওয়ার রি-রুট",
+      "পাওয়ার প্ল্যান"
+    ]
+  }
+}
+

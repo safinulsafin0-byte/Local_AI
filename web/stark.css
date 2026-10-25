@@ -1,0 +1,277 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   JARVIS Stark Edition - Mission Control HUD & Engineering UI Styles
+   ───────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --stark-cyan: #00f0ff;
+  --stark-cyan-glow: rgba(0, 240, 255, 0.4);
+  --stark-gold: #ffb700;
+  --stark-gold-glow: rgba(255, 183, 0, 0.35);
+  --stark-dark: #070d17;
+  --stark-card-bg: rgba(10, 22, 38, 0.85);
+  --stark-border: rgba(0, 240, 255, 0.25);
+}
+
+/* ── Holographic HUD Section ─────────────────────────────────────────────── */
+.stark-hud-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #d1f7ff;
+}
+
+.stark-banner {
+  background: linear-gradient(90deg, rgba(0, 240, 255, 0.15), rgba(10, 22, 38, 0.4));
+  border: 1px solid var(--stark-border);
+  border-left: 4px solid var(--stark-cyan);
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stark-banner-title {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--stark-cyan);
+  text-shadow: 0 0 10px var(--stark-cyan-glow);
+}
+
+/* ── Arc Reactor Core Animation ─────────────────────────────────────────── */
+.arc-reactor-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.08) 0%, rgba(7, 13, 23, 0.8) 70%);
+  border: 1px solid var(--stark-border);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.arc-reactor {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arc-ring-outer {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  border: 2px dashed var(--stark-cyan);
+  box-shadow: 0 0 18px var(--stark-cyan-glow);
+  animation: arcSpin 20s linear infinite;
+}
+
+.arc-ring-middle {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 240, 255, 0.3);
+  border-top-color: var(--stark-gold);
+  border-bottom-color: var(--stark-cyan);
+  animation: arcSpinRev 12s linear infinite;
+}
+
+.arc-core {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 10%, #00f0ff 60%, rgba(0, 240, 255, 0.2) 100%);
+  box-shadow: 0 0 25px #00f0ff, inset 0 0 10px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: arcPulse 3s ease-in-out infinite alternate;
+}
+
+.arc-core-text {
+  font-size: 11px;
+  font-weight: 900;
+  color: #070d17;
+  letter-spacing: 0.5px;
+}
+
+@keyframes arcSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes arcSpinRev {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes arcPulse {
+  0% { transform: scale(0.96); box-shadow: 0 0 15px #00f0ff; }
+  100% { transform: scale(1.05); box-shadow: 0 0 35px #00f0ff, 0 0 60px rgba(0, 240, 255, 0.5); }
+}
+
+/* ── Quick Protocol Buttons Grid ────────────────────────────────────────── */
+.protocol-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.protocol-btn {
+  background: var(--stark-card-bg);
+  border: 1px solid var(--stark-border);
+  color: #e2f7ff;
+  border-radius: 8px;
+  padding: 9px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.protocol-btn:hover {
+  background: rgba(0, 240, 255, 0.15);
+  border-color: var(--stark-cyan);
+  box-shadow: 0 0 10px var(--stark-cyan-glow);
+  transform: translateY(-1px);
+}
+
+/* ── Radar Sweep Widget ─────────────────────────────────────────────────── */
+.radar-box {
+  width: 100%;
+  height: 160px;
+  background: #040810;
+  border: 1px solid var(--stark-border);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radar-sweep {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  background: conic-gradient(from 0deg, rgba(0, 240, 255, 0.4) 0deg, transparent 60deg, transparent 360deg);
+  animation: arcSpin 4s linear infinite;
+}
+
+.radar-rings {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 20%, rgba(0, 240, 255, 0.1) 21%, transparent 22%, transparent 45%, rgba(0, 240, 255, 0.1) 46%, transparent 47%, transparent 70%, rgba(0, 240, 255, 0.1) 71%, transparent 72%);
+}
+
+.radar-blip {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00f0ff;
+  box-shadow: 0 0 8px #00f0ff;
+  animation: blipFade 2s ease-in-out infinite;
+}
+
+@keyframes blipFade {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+/* ── 3D CAD Viewer Canvas ───────────────────────────────────────────────── */
+.cad-viewport-box {
+  width: 100%;
+  height: 250px;
+  background: #040810;
+  border: 1px solid var(--stark-border);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cad-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cad-toolbar {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── Virtual Smart Room SVG ─────────────────────────────────────────────── */
+.facility-canvas-box {
+  width: 100%;
+  height: 220px;
+  background: #070e18;
+  border: 1px solid var(--stark-border);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fixture-node {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fixture-node:hover {
+  filter: drop-shadow(0 0 8px #00f0ff);
+}
+
+/* ── Task Board Swarm ───────────────────────────────────────────────────── */
+.task-card {
+  background: rgba(10, 22, 38, 0.9);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-left: 3px solid var(--stark-cyan);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+}
+
+.task-card.running {
+  border-left-color: var(--stark-gold);
+}
+
+.task-card.done {
+  border-left-color: #22c55e;
+}
+
+.task-progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.task-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--stark-cyan), var(--stark-gold));
+  transition: width 0.3s ease;
+}
+

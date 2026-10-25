@@ -1,0 +1,57 @@
+{
+  "id": "briefing_protocols",
+  "name": "Stark Briefings & Protocols",
+  "description": "Proactive executive briefings, named macro routines (Study, Night Mode, Clean Slate, Demo Mode), and Stark personality engine.",
+  "version": "1.0.0",
+  "enabled": true,
+  "risk_level": "medium",
+  "permissions": ["system_telemetry", "volume_control", "app_launcher", "weather_read"],
+  "resource_cost": {
+    "ram_mb": 15,
+    "cpu_percent": 0.5
+  },
+  "tools": [
+    "get_proactive_briefing",
+    "run_protocol",
+    "list_protocols",
+    "save_protocol",
+    "delete_protocol",
+    "set_personality_mode",
+    "get_personality_mode"
+  ],
+  "intents": [
+    "proactive_briefing",
+    "run_protocol",
+    "list_protocols"
+  ],
+  "keywords": {
+    "proactive_briefing": [
+      "status report",
+      "status briefing",
+      "good morning",
+      "good evening",
+      "morning briefing",
+      "evening briefing",
+      "system briefing",
+      "jarvis status report",
+      "অবস্থা জানাও",
+      "স্ট্যাটাস রিপোর্ট",
+      "ব্রিফিং দাও"
+    ],
+    "run_protocol": [
+      "protocol",
+      "run protocol",
+      "start protocol",
+      "execute protocol",
+      "প্রটোকল চালু করো",
+      "প্রোটোকল"
+    ],
+    "list_protocols": [
+      "list protocols",
+      "show protocols",
+      "what protocols",
+      "প্রটোকল তালিকা"
+    ]
+  }
+}
+

@@ -1,0 +1,498 @@
+/* ==========================================================================
+   JARVIS Claymorphism Design System — web/static/clay.css & web/clay.css
+   Soft, tactile 3D puffy clay aesthetic (dual-shadows, bevels, pill shapes).
+   Strict WCAG AA contrast compliant (all ratios >= 4.5:1).
+   Works offline with native Segoe UI + Nirmala UI Bengali fonts.
+   ========================================================================== */
+
+:root, [data-theme="light"] {
+  --theme: light;
+
+  /* Clay Light Theme Palette */
+  --bg: #E6E1F7;
+  --surface: #F2EFFF;
+  --surface-raised: #FAF8FE;
+  --surface-sunken: #DDD8F0;
+  --surface-card: #F2EFFF;
+  --border: #D8D2EB;
+
+  --ink: #1A153B;
+  --ink-soft: #48426D;
+  --ink-faint: #655E82;
+
+  --accent: #5E4BF5;
+  --accent-light: #ECE9FD;
+  --on-accent: #FFFFFF;
+  --accent-gradient: linear-gradient(135deg, #705CF6 0%, #5E4BF5 100%);
+  --accent-shadow: 4px 4px 10px rgba(94, 75, 245, 0.35), -2px -2px 6px rgba(255, 255, 255, 0.8), inset 1px 1px 2px rgba(255, 255, 255, 0.6);
+
+  --green: #059669;
+  --orange: #D97706;
+  --red: #DC2626;
+  --blue: #2563EB;
+
+  /* Clay Shadows (Light) */
+  --clay-shadow-raised: 8px 8px 18px rgba(165, 155, 205, 0.5), -8px -8px 18px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.7), inset -2px -2px 4px rgba(165, 155, 205, 0.25);
+  --clay-shadow-card: 5px 5px 12px rgba(165, 155, 200, 0.4), -5px -5px 12px rgba(255, 255, 255, 0.85), inset 1px 1px 3px rgba(255, 255, 255, 0.6), inset -1px -1px 3px rgba(165, 155, 200, 0.2);
+  --clay-shadow-pressed: inset 4px 4px 8px rgba(160, 150, 195, 0.5), inset -4px -4px 8px rgba(255, 255, 255, 0.85);
+  --clay-shadow-pill: 4px 4px 10px rgba(160, 150, 195, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.85), inset 1px 1px 3px rgba(255, 255, 255, 0.7);
+
+  /* Radii & Typography */
+  --clay-radius: 18px;
+  --clay-radius-sm: 12px;
+  --clay-radius-lg: 24px;
+  --clay-radius-pill: 9999px;
+  --font-clay: 'Nunito', 'Segoe UI', 'Nirmala UI', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  --font-mono: 'Cascadia Code', 'Consolas', 'Fira Code', monospace;
+
+  /* Aliases for legacy index.html variable support */
+  --bg0: var(--bg);
+  --bg1: var(--surface);
+  --bg2: var(--surface-raised);
+  --bg3: var(--border);
+  --bg4: var(--border);
+  --text: var(--ink);
+  --text2: var(--ink-soft);
+  --text3: var(--ink-faint);
+
+  --clay-bg: var(--bg);
+  --clay-surface: var(--surface);
+  --clay-surface-raised: var(--surface-raised);
+  --clay-surface-sunken: var(--surface-sunken);
+  --clay-ink: var(--ink);
+  --clay-ink-muted: var(--ink-soft);
+  --clay-ink-faint: var(--ink-faint);
+  --clay-accent: var(--accent);
+  --clay-accent-gradient: var(--accent-gradient);
+}
+
+[data-theme="dark"] {
+  --theme: dark;
+
+  /* Clay Dark Theme Palette */
+  --bg: #12101F;
+  --surface: #1C192E;
+  --surface-raised: #26223D;
+  --surface-sunken: #0D0B17;
+  --surface-card: #1C192E;
+  --border: #2D2847;
+
+  --ink: #F5F3FF;
+  --ink-soft: #BDB7DC;
+  --ink-faint: #8B84B3;
+
+  --accent: #705CF6;
+  --accent-light: #2D274A;
+  --on-accent: #FFFFFF;
+  --accent-gradient: linear-gradient(135deg, #8272F8 0%, #5E4BF5 100%);
+  --accent-shadow: 4px 4px 10px rgba(10, 8, 20, 0.6), inset 1px 1px 3px rgba(255, 255, 255, 0.2);
+
+  --green: #10B981;
+  --orange: #F59E0B;
+  --red: #EF4444;
+  --blue: #3B82F6;
+
+  /* Clay Shadows (Dark) */
+  --clay-shadow-raised: 8px 8px 18px rgba(8, 6, 16, 0.8), -6px -6px 14px rgba(45, 40, 70, 0.5), inset 1px 1px 2px rgba(75, 68, 105, 0.4), inset -1px -1px 2px rgba(8, 6, 16, 0.4);
+  --clay-shadow-card: 5px 5px 12px rgba(8, 6, 16, 0.75), -5px -5px 12px rgba(45, 40, 70, 0.45), inset 1px 1px 2px rgba(70, 62, 98, 0.35);
+  --clay-shadow-pressed: inset 4px 4px 8px rgba(6, 4, 14, 0.9), inset -4px -4px 8px rgba(50, 44, 75, 0.4);
+  --clay-shadow-pill: 5px 5px 12px rgba(6, 4, 14, 0.7), -4px -4px 10px rgba(45, 40, 70, 0.4);
+
+  /* Aliases for legacy index.html variable support */
+  --bg0: var(--bg);
+  --bg1: var(--surface);
+  --bg2: var(--surface-raised);
+  --bg3: var(--border);
+  --bg4: var(--border);
+  --text: var(--ink);
+  --text2: var(--ink-soft);
+  --text3: var(--ink-faint);
+
+  --clay-bg: var(--bg);
+  --clay-surface: var(--surface);
+  --clay-surface-raised: var(--surface-raised);
+  --clay-surface-sunken: var(--surface-sunken);
+  --clay-ink: var(--ink);
+  --clay-ink-muted: var(--ink-soft);
+  --clay-ink-faint: var(--ink-faint);
+  --clay-accent: var(--accent);
+  --clay-accent-gradient: var(--accent-gradient);
+}
+
+/* ==========================================================================
+   GLOBAL BASE & CONTAINER STYLING
+   ========================================================================== */
+html, body {
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+  font-family: var(--font-clay) !important;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.app {
+  background: var(--bg) !important;
+}
+
+/* Sidebar */
+.sidebar {
+  background: var(--surface) !important;
+  border-right: 1px solid var(--border) !important;
+  box-shadow: var(--clay-shadow-raised);
+}
+.sidebar-header, .sidebar-footer {
+  border-color: var(--border) !important;
+}
+.logo-mark {
+  background: var(--accent-gradient) !important;
+  color: var(--on-accent) !important;
+  box-shadow: var(--accent-shadow) !important;
+  border-radius: var(--clay-radius-sm) !important;
+  font-weight: 800 !important;
+  font-size: 16px !important;
+}
+.logo-text {
+  color: var(--ink) !important;
+  font-weight: 700 !important;
+}
+.logo-sub {
+  color: var(--ink-faint) !important;
+  font-weight: 600 !important;
+}
+.sidebar-section {
+  color: var(--ink-faint) !important;
+}
+.new-chat-btn {
+  background: var(--accent-gradient) !important;
+  color: var(--on-accent) !important;
+  box-shadow: var(--accent-shadow) !important;
+  border-radius: var(--clay-radius-pill) !important;
+}
+.mode-select {
+  background: var(--surface-raised) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--ink) !important;
+  border-radius: var(--clay-radius-sm) !important;
+}
+.history-item {
+  color: var(--ink-soft) !important;
+  border-radius: var(--clay-radius-sm) !important;
+}
+.history-item:hover {
+  background: var(--surface-raised) !important;
+  color: var(--ink) !important;
+}
+.history-item.active {
+  background: var(--surface-sunken) !important;
+  color: var(--accent) !important;
+  font-weight: 600;
+  box-shadow: var(--clay-shadow-pressed) !important;
+}
+.nav-btn {
+  color: var(--ink-soft) !important;
+}
+.nav-btn:hover {
+  background: var(--surface-raised) !important;
+  color: var(--ink) !important;
+}
+.nav-btn.active {
+  background: var(--surface-sunken) !important;
+  color: var(--accent) !important;
+  box-shadow: var(--clay-shadow-pressed) !important;
+}
+
+/* Main & Topbar */
+.main {
+  background: var(--bg) !important;
+}
+.topbar {
+  background: var(--surface) !important;
+  border-bottom: 1px solid var(--border) !important;
+  color: var(--ink) !important;
+}
+.topbar-title {
+  color: var(--ink) !important;
+}
+.topbar-status {
+  color: var(--ink-soft) !important;
+}
+.status-chip {
+  background: var(--surface-raised) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--ink-soft) !important;
+}
+.icon-btn {
+  background: var(--surface-raised) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--ink-soft) !important;
+  border-radius: var(--clay-radius-pill) !important;
+}
+.icon-btn:hover {
+  background: var(--surface-sunken) !important;
+  color: var(--ink) !important;
+}
+
+/* Chat Messages & Bubbles */
+#messages {
+  background: var(--bg) !important;
+}
+.msg.user .msg-bubble {
+  background: var(--accent) !important;
+  color: var(--on-accent) !important;
+  border-radius: 18px 18px 4px 18px !important;
+  box-shadow: var(--accent-shadow) !important;
+}
+.msg.user .msg-bubble * {
+  color: var(--on-accent) !important;
+}
+.msg.assistant .msg-bubble {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border-radius: 18px 18px 18px 4px !important;
+  box-shadow: var(--clay-shadow-card) !important;
+  border: 1px solid var(--border);
+}
+.msg.assistant .msg-bubble * {
+  color: inherit;
+}
+.msg.assistant .msg-bubble code {
+  background: var(--surface-sunken) !important;
+  color: var(--accent) !important;
+}
+.msg.assistant .msg-bubble pre {
+  background: var(--surface-sunken) !important;
+  border: 1px solid var(--border) !important;
+}
+.msg.assistant .msg-bubble pre code {
+  background: transparent !important;
+  color: var(--ink) !important;
+}
+.msg-meta {
+  color: var(--ink-faint) !important;
+}
+
+/* Language Badges */
+.lang-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 7px;
+  border-radius: var(--clay-radius-pill);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.lang-badge.bn {
+  background: rgba(5, 150, 105, 0.15) !important;
+  color: #059669 !important;
+  border: 1px solid rgba(5, 150, 105, 0.3) !important;
+}
+.lang-badge.en {
+  background: rgba(37, 99, 235, 0.15) !important;
+  color: #2563EB !important;
+  border: 1px solid rgba(37, 99, 235, 0.3) !important;
+}
+
+/* Input Row & Clay Pills */
+.input-wrap {
+  border-top: 1px solid var(--border) !important;
+  background: var(--surface) !important;
+}
+.input-row {
+  background: var(--surface-raised) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--clay-radius-pill) !important;
+  box-shadow: var(--clay-shadow-pill) !important;
+}
+#msg-input {
+  color: var(--ink) !important;
+  font-family: var(--font-clay) !important;
+}
+#msg-input::placeholder {
+  color: var(--ink-faint) !important;
+}
+
+.send-btn {
+  background: var(--accent-gradient) !important;
+  color: var(--on-accent) !important;
+  border-radius: var(--clay-radius-pill) !important;
+  box-shadow: var(--accent-shadow) !important;
+}
+.attach-btn {
+  background: var(--surface-raised) !important;
+  color: var(--ink-soft) !important;
+  border-radius: var(--clay-radius-pill) !important;
+  box-shadow: var(--clay-shadow-card) !important;
+}
+.attach-btn:hover {
+  color: var(--accent) !important;
+}
+
+/* Right Panel & Tabs (NO CLIPPING, WRAP / PILLS) */
+.right-panel {
+  background: var(--surface) !important;
+  border-left: 1px solid var(--border) !important;
+  box-shadow: var(--clay-shadow-raised);
+}
+.panel-tabs {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 5px !important;
+  padding: 8px !important;
+  border-bottom: 1px solid var(--border) !important;
+  background: var(--surface) !important;
+  overflow: visible !important;
+}
+.panel-tab {
+  flex: 0 0 auto !important;
+  padding: 5px 11px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--clay-radius-pill) !important;
+  background: var(--surface-sunken) !important;
+  color: var(--ink-soft) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  transition: all 0.18s ease !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+}
+.panel-tab:hover:not(.active) {
+  background: var(--surface-raised) !important;
+  color: var(--ink) !important;
+}
+.panel-tab.active {
+  background: var(--accent) !important;
+  color: var(--on-accent) !important;
+  border-color: var(--accent) !important;
+  box-shadow: var(--accent-shadow) !important;
+  font-weight: 700 !important;
+}
+
+.collapse-btn {
+  background: var(--surface-raised) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--ink-soft) !important;
+  border-radius: var(--clay-radius-pill) !important;
+}
+
+/* Panel Sections & Settings */
+.panel-content {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+}
+.settings-group {
+  margin-bottom: 12px;
+}
+.settings-label {
+  color: var(--ink-soft) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+.settings-select, .settings-input {
+  background: var(--surface-raised) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--ink) !important;
+  border-radius: var(--clay-radius-sm) !important;
+  padding: 7px 10px !important;
+  width: 100% !important;
+  font-size: 12px !important;
+}
+.settings-btn {
+  background: var(--accent-gradient) !important;
+  color: var(--on-accent) !important;
+  box-shadow: var(--accent-shadow) !important;
+  border-radius: var(--clay-radius-pill) !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+.code-btn {
+  background: var(--surface-raised) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--ink) !important;
+  border-radius: var(--clay-radius-sm) !important;
+}
+
+/* Theme Toggle Pill Buttons */
+.theme-toggle-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+.theme-pill-btn {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: var(--clay-radius-pill);
+  border: 1px solid var(--border);
+  background: var(--surface-sunken);
+  color: var(--ink-soft);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.18s ease;
+}
+.theme-pill-btn:hover {
+  background: var(--surface-raised);
+  color: var(--ink);
+}
+.theme-pill-btn.active {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+  box-shadow: var(--accent-shadow);
+}
+
+/* Voice Hero Button (5 States) */
+.voice-btn {
+  border-radius: var(--clay-radius-pill) !important;
+  border: none !important;
+  width: 40px !important;
+  height: 40px !important;
+  transition: all 0.25s ease !important;
+}
+.voice-btn.off {
+  background: var(--surface-sunken) !important;
+  box-shadow: var(--clay-shadow-pressed) !important;
+  color: var(--ink-faint) !important;
+}
+.voice-btn.listening {
+  background: #E1F8EC !important;
+  color: #059669 !important;
+  box-shadow: 4px 4px 12px rgba(5, 150, 105, 0.35), -3px -3px 8px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.8) !important;
+  animation: clayPulseGreen 2.2s infinite ease-in-out !important;
+}
+.voice-btn.hearing {
+  background: #FEE2E2 !important;
+  color: #DC2626 !important;
+  box-shadow: 4px 4px 14px rgba(220, 38, 38, 0.5), -3px -3px 8px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.8) !important;
+  animation: clayPulseRed 0.9s infinite ease-in-out !important;
+}
+.voice-btn.thinking {
+  background: var(--accent-light) !important;
+  color: var(--accent) !important;
+  box-shadow: 4px 4px 12px rgba(94, 75, 245, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.8) !important;
+}
+.voice-btn.speaking {
+  background: #DBEAFE !important;
+  color: #2563EB !important;
+  box-shadow: 4px 4px 14px rgba(37, 99, 235, 0.45), -3px -3px 8px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.8) !important;
+  animation: clayPulseBlue 1.8s infinite ease-in-out !important;
+}
+
+@keyframes clayPulseGreen {
+  0%, 100% { box-shadow: 4px 4px 10px rgba(5, 150, 105, 0.3), -3px -3px 8px rgba(255, 255, 255, 0.9); }
+  50% { box-shadow: 6px 6px 18px rgba(5, 150, 105, 0.6), -4px -4px 12px rgba(255, 255, 255, 0.95); }
+}
+@keyframes clayPulseRed {
+  0%, 100% { transform: scale(1); box-shadow: 4px 4px 12px rgba(220, 38, 38, 0.4); }
+  50% { transform: scale(1.08); box-shadow: 6px 6px 20px rgba(220, 38, 38, 0.8); }
+}
+@keyframes clayPulseBlue {
+  0%, 100% { box-shadow: 4px 4px 10px rgba(37, 99, 235, 0.3), -3px -3px 8px rgba(255, 255, 255, 0.9); }
+  50% { box-shadow: 6px 6px 18px rgba(37, 99, 235, 0.65), -4px -4px 12px rgba(255, 255, 255, 0.95); }
+}

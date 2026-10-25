@@ -1,0 +1,649 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>JARVIS AI Office</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     APP
+========================================================= -->
+
+<div class="app">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                J
+            </div>
+
+            <div>
+
+                <div class="brand-name">
+                    JARVIS
+                </div>
+
+                <div class="brand-subtitle">
+                    AI COMMAND CENTER
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="new-chat-btn"
+            id="newChatButton"
+        >
+
+            <span>ï¼‹</span>
+
+            New Chat
+
+        </button>
+
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-title">
+                AI WORKERS
+            </div>
+
+
+            <div class="worker-menu-item active">
+
+                <span class="worker-menu-dot"></span>
+
+                Coordinator
+
+            </div>
+
+
+            <div class="worker-menu-item">
+
+                <span class="worker-menu-dot"></span>
+
+                Research Agent
+
+            </div>
+
+
+            <div class="worker-menu-item">
+
+                <span class="worker-menu-dot"></span>
+
+                Vision Agent
+
+            </div>
+
+
+            <div class="worker-menu-item">
+
+                <span class="worker-menu-dot"></span>
+
+                Image Agent
+
+            </div>
+
+
+            <div class="worker-menu-item">
+
+                <span class="worker-menu-dot"></span>
+
+                Tool Agent
+
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div
+                class="system-status"
+                id="systemStatus"
+            >
+
+                <span class="status-light"></span>
+
+                <span>
+                    JARVIS Online
+                </span>
+
+            </div>
+
+
+            <div class="sidebar-info">
+
+                Local AI Assistant
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main-container">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <div class="topbar-left">
+
+                <div class="topbar-title">
+
+                    JARVIS
+
+                </div>
+
+                <div class="topbar-divider"></div>
+
+                <div
+                    class="command-status"
+                    id="commandStatus"
+                >
+
+                    <span
+                        class="command-status-dot"
+                    ></span>
+
+                    System Ready
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+
+                <div class="online-workers">
+
+                    <span
+                        class="online-dot"
+                    ></span>
+
+                    <span>
+                        5 Agents Online
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             OFFICE AREA
+        ================================================== -->
+
+        <section
+            class="office-section"
+            id="officeSection"
+        >
+
+
+            <!-- OFFICE HEADER -->
+
+            <div class="office-header">
+
+
+                <div>
+
+                    <h2>
+                        JARVIS AI OFFICE
+                    </h2>
+
+                    <p>
+                        Watch your AI agents work on your command
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="office-state idle"
+                    id="officeState"
+                >
+
+                    <span class="office-state-dot"></span>
+
+                    <span id="officeStateText">
+                        Idle
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 OFFICE ROOM
+            ============================================== -->
+
+            <div
+                class="office-room"
+                id="officeRoom"
+            >
+
+
+                <!-- BACK WALL -->
+
+                <div class="office-window">
+
+                    <div class="window-glow"></div>
+
+                </div>
+
+
+                <!-- DESKS -->
+
+                <div class="desk desk-1">
+
+                    <div
+                        class="agent"
+                        data-agent="coordinator"
+                    >
+
+                        <div class="agent-head">
+                            ðŸ§ 
+                        </div>
+
+                        <div class="agent-name">
+                            Coordinator
+                        </div>
+
+                        <div class="agent-role">
+                            Command Planning
+                        </div>
+
+                        <div class="agent-status">
+                            IDLE
+                        </div>
+
+                    </div>
+
+                    <div class="computer">
+
+                        <div class="monitor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="desk-top"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="desk desk-2">
+
+                    <div
+                        class="agent"
+                        data-agent="research"
+                    >
+
+                        <div class="agent-head">
+                            ðŸ”Ž
+                        </div>
+
+                        <div class="agent-name">
+                            Research Agent
+                        </div>
+
+                        <div class="agent-role">
+                            Information Search
+                        </div>
+
+                        <div class="agent-status">
+                            IDLE
+                        </div>
+
+                    </div>
+
+                    <div class="computer">
+
+                        <div class="monitor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="desk-top"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="desk desk-3">
+
+                    <div
+                        class="agent"
+                        data-agent="vision"
+                    >
+
+                        <div class="agent-head">
+                            ðŸ‘
+                        </div>
+
+                        <div class="agent-name">
+                            Vision Agent
+                        </div>
+
+                        <div class="agent-role">
+                            Image Analysis
+                        </div>
+
+                        <div class="agent-status">
+                            IDLE
+                        </div>
+
+                    </div>
+
+                    <div class="computer">
+
+                        <div class="monitor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="desk-top"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="desk desk-4">
+
+                    <div
+                        class="agent"
+                        data-agent="image"
+                    >
+
+                        <div class="agent-head">
+                            ðŸŽ¨
+                        </div>
+
+                        <div class="agent-name">
+                            Image Agent
+                        </div>
+
+                        <div class="agent-role">
+                            Image Generation
+                        </div>
+
+                        <div class="agent-status">
+                            IDLE
+                        </div>
+
+                    </div>
+
+                    <div class="computer">
+
+                        <div class="monitor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="desk-top"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="desk desk-5">
+
+                    <div
+                        class="agent"
+                        data-agent="tools"
+                    >
+
+                        <div class="agent-head">
+                            ðŸ› 
+                        </div>
+
+                        <div class="agent-name">
+                            Tool Agent
+                        </div>
+
+                        <div class="agent-role">
+                            System Actions
+                        </div>
+
+                        <div class="agent-status">
+                            IDLE
+                        </div>
+
+                    </div>
+
+                    <div class="computer">
+
+                        <div class="monitor">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="desk-top"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- JARVIS CORE -->
+
+                <div class="jarvis-core">
+
+                    <div class="core-ring ring-1"></div>
+
+                    <div class="core-ring ring-2"></div>
+
+                    <div class="core-ring ring-3"></div>
+
+                    <div class="core-center">
+
+                        J
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- OFFICE ACTIVITY PANEL -->
+
+                <div
+                    class="office-activity"
+                    id="officeActivity"
+                >
+
+                    <div class="activity-label">
+
+                        SYSTEM ACTIVITY
+
+                    </div>
+
+
+                    <div
+                        class="activity-text"
+                        id="activityText"
+                    >
+
+                        Waiting for command...
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             CHAT
+        ================================================== -->
+
+        <section
+            class="chat-section"
+            id="chat"
+        >
+
+
+            <div
+                class="welcome-message"
+                id="welcome"
+            >
+
+                <div class="welcome-icon">
+                    J
+                </div>
+
+                <h1>
+                    Hello, I'm JARVIS
+                </h1>
+
+                <p>
+                    Give me a command and watch my AI office
+                    come to life.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             INPUT
+        ================================================== -->
+
+        <div class="input-area">
+
+
+            <div class="input-container">
+
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Give JARVIS a command..."
+                    rows="1"
+                ></textarea>
+
+
+                <button
+                    class="mic-button"
+                    id="micButton"
+                    type="button"
+                    title="Voice input"
+                >
+
+                    ðŸŽ¤
+
+                </button>
+
+
+                <button
+                    class="send-button"
+                    id="sendButton"
+                    type="button"
+                    title="Send command"
+                >
+
+                    â†‘
+
+                </button>
+
+
+            </div>
+
+
+            <div
+                class="voice-status"
+                id="voiceStatus"
+            ></div>
+
+
+        </div>
+
+
+    </main>
+
+
+</div>
+
+
+
+<script
+    src="app.js"
+></script>
+
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,16 @@
+{
+  "name": "threat_defense",
+  "version": "1.0.0",
+  "display_name": "S.H.I.E.L.D. Threat Defense & Audit",
+  "description": "Defensive security audit, local subnet device mapping, open port analysis, and code vulnerability scanner.",
+  "enabled": true,
+  "routes_module": "modules.threat_defense.routes",
+  "tools_module": "modules.threat_defense.tools",
+  "capabilities": [
+    "security_audit",
+    "open_ports_analysis",
+    "local_network_inventory",
+    "code_security_scan"
+  ]
+}
+

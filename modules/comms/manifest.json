@@ -1,0 +1,16 @@
+{
+  "name": "comms",
+  "version": "1.0.0",
+  "display_name": "Stark Comms Relay & Notifications",
+  "description": "Secure remote messaging relay (Telegram with strict chat ID whitelist), desktop Windows notifications, and priority alert dispatch.",
+  "enabled": true,
+  "routes_module": "modules.comms.routes",
+  "tools_module": "modules.comms.tools",
+  "capabilities": [
+    "desktop_notifications",
+    "remote_telegram_relay",
+    "reminder_management",
+    "comms_dispatch"
+  ]
+}
+

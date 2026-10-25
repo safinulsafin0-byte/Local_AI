@@ -1,0 +1,42 @@
+{
+  "id": "task_board",
+  "name": "Task Board (House Party Protocol)",
+  "description": "Parallel background tool execution board with live telemetry, progress monitoring, and abort controls.",
+  "version": "1.0.0",
+  "enabled": true,
+  "risk_level": "low",
+  "permissions": ["concurrency", "process_control"],
+  "resource_cost": {
+    "ram_mb": 20,
+    "cpu_percent": 1.0
+  },
+  "tools": [
+    "create_background_task",
+    "cancel_task",
+    "get_task_board",
+    "clear_completed_tasks",
+    "spawn_demo_swarm"
+  ],
+  "intents": [
+    "task_board",
+    "house_party_protocol"
+  ],
+  "keywords": {
+    "task_board": [
+      "task board",
+      "show tasks",
+      "running tasks",
+      "background tasks",
+      "প্যারালাল টাস্ক",
+      "টাস্ক বোর্ড"
+    ],
+    "house_party_protocol": [
+      "house party protocol",
+      "launch swarm",
+      "run parallel tasks",
+      "হাউস পার্টি প্রোটোকল",
+      "সমান্তরাল টাস্ক"
+    ]
+  }
+}
+

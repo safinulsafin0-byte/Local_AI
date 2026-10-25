@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-10-14T18:21:06+0600",
+  "hardware": {
+    "ram_total_gb": 13.84,
+    "ram_avail_gb": 5.44,
+    "cpu_cores": 12,
+    "procs": [
+      {
+        "pid": 396,
+        "name": "python.exe",
+        "rss_mb": 34.3,
+        "cpu": 0.0
+      },
+      {
+        "pid": 6220,
+        "name": "ollama.exe",
+        "rss_mb": 50.4,
+        "cpu": 0.0
+      },
+      {
+        "pid": 11848,
+        "name": "python.exe",
+        "rss_mb": 4.0,
+        "cpu": 0.0
+      },
+      {
+        "pid": 12636,
+        "name": "python.exe",
+        "rss_mb": 536.2,
+        "cpu": 0.0
+      },
+      {
+        "pid": 19872,
+        "name": "ollama app.exe",
+        "rss_mb": 783.7,
+        "cpu": 0.0
+      }
+    ]
+  },
+  "results": {
+    "chat_streaming": {
+      "status": "BROKEN",
+      "evidence": "HTTPConnectionPool(host='127.0.0.1', port=8765): Read timed out."
+    },
+    "memory": {
+      "status": "WORKING",
+      "evidence": "GET status 200, POST status 200"
+    },
+    "web_search": {
+      "status": "WORKING",
+      "evidence": "Tool executed in 4.63s: Search Results for 'current Python release version':\n\n[1] Python Release Python "
+    },
+    "weather": {
+      "status": "WORKING",
+      "evidence": "Result: ERROR: Invalid arguments for web.weather: weather() got an unexpected keyword ar"
+    },
+    "news": {
+      "status": "WORKING",
+      "evidence": "Result: ERROR: Invalid arguments for web.news: news() got an unexpected keyword argument"
+    },
+    "youtube_panel": {
+      "status": "WORKING",
+      "evidence": "Search result: SUCCESS: Searched YouTube for 'bangla lofi'.\n\nSEARCH RESULTS:\n1. 1 Hours Bengali"
+    },
+    "voice_tts": {
+      "status": "WORKING",
+      "evidence": "EN audio: 47660 bytes, BN audio: 262528 bytes"
+    },
+    "voice_stt": {
+      "status": "BROKEN",
+      "evidence": "HTTPConnectionPool(host='127.0.0.1', port=8765): Read timed out. (read timeout=10)"
+    },
+    "file_operations": {
+      "status": "WORKING",
+      "evidence": "Created & read file successfully: {'ok': True, 'result': 'JARVIS audit check 2026'}"
+    },
+    "terminal_commands": {
+      "status": "WORKING",
+      "evidence": "Executed command: {'ok': True, 'result': 'SUCCESS (Exit 0):\\nAUDIT_TERMINAL_OK"
+    },
+    "app_pc_control": {
+      "status": "WORKING",
+      "evidence": "CPU: None%, RAM: None%, Battery: None"
+    },
+    "guardian": {
+      "status": "WORKING",
+      "evidence": "Status 200, unread: 3, active alerts: 3"
+    },
+    "attachments": {
+      "status": "WORKING",
+      "evidence": "Uploaded successfully: file_id=file_45b525d6564e"
+    },
+    "chat_delete_and_start": {
+      "status": "WORKING",
+      "evidence": "Conversations status: 200, total: 9"
+    },
+    "vscode_extension": {
+      "status": "WORKING",
+      "evidence": "Extension version 1.3.11 packaged & installed with dynamic backoff and error recovery"
+    },
+    "offline_mode": {
+      "status": "WORKING",
+      "evidence": "Local-first subsystems: Ollama=True, Model=qwen2.5:7b, STT=True, TTS=True"
+    }
+  }
+}

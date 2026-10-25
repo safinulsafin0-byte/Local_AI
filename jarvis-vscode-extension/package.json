@@ -1,0 +1,202 @@
+{
+  "name": "jarvis-ai-copilot",
+  "displayName": "JARVIS AI Copilot",
+  "description": "Autonomous local AI copilot & Windows PC controller powered by Ollama",
+  "version": "1.3.11",
+  "publisher": "jarvis-ai",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "AI",
+    "Programming Languages",
+    "Snippets",
+    "Other"
+  ],
+  "main": "./extension.js",
+  "icon": "media/icon.png",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "jarvis.chatParticipant",
+        "name": "jarvis",
+        "fullName": "JARVIS AI Copilot",
+        "description": "Autonomous local AI copilot & Windows PC bridge powered by Ollama",
+        "isDefault": true,
+        "commands": [
+          { "name": "explain", "description": "Explain selected code or file architecture" },
+          { "name": "fix", "description": "Diagnose and fix bugs, errors, or linter problems" },
+          { "name": "tests", "description": "Generate comprehensive unit tests" },
+          { "name": "doc", "description": "Generate documentation, docstrings, and comments" },
+          { "name": "optimize", "description": "Optimize algorithms, performance, and memory" },
+          { "name": "refactor", "description": "Refactor code structure and clean up smells" },
+          { "name": "commit", "description": "Generate conventional git commit message" },
+          { "name": "review", "description": "Review code for edge cases, security, and quality" }
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "jarvis.openChat",
+        "title": "Open Chat",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.inlineChat",
+        "title": "Inline Edit (Ctrl+I)",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.explainCode",
+        "title": "Explain Selected Code",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.explainFile",
+        "title": "Ask JARVIS About This File",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.fixCode",
+        "title": "Fix / Debug Selection",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.generateTests",
+        "title": "Generate Unit Tests",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.documentCode",
+        "title": "Generate Documentation",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.generateCommitMessage",
+        "title": "Generate Git Commit Message",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.startBackend",
+        "title": "Start JARVIS Backend",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.showStatus",
+        "title": "Check System Status",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.showGuardianAlerts",
+        "title": "Show Guardian Security Alerts",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.applyMultiFileDiff",
+        "title": "Apply Multi-File Diff",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.toggleVoice",
+        "title": "Toggle Voice (Mic ON/OFF)",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.voiceInput",
+        "title": "Voice Input",
+        "category": "JARVIS"
+      },
+      {
+        "command": "jarvis.selectVoiceMode",
+        "title": "Voice Settings (Devices / Language / Sensitivity)",
+        "category": "JARVIS"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "jarvis.explainFile",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "jarvis.explainFile",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "jarvis.inlineChat",
+        "key": "ctrl+i",
+        "mac": "cmd+i",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "jarvis.toggleVoice",
+        "key": "ctrl+alt+v",
+        "mac": "cmd+alt+v"
+      },
+      {
+        "command": "jarvis.toggleVoice",
+        "key": "ctrl+alt+m",
+        "mac": "cmd+alt+m"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "jarvis",
+          "title": "JARVIS AI",
+          "icon": "media/icon.png"
+        }
+      ]
+    },
+    "views": {
+      "jarvis": [
+        {
+          "type": "webview",
+          "id": "jarvis.chat",
+          "name": "JARVIS Assistant",
+          "icon": "media/icon.png"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "JARVIS",
+      "properties": {
+        "jarvis.apiUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:8765/api/v1",
+          "description": "URL of the JARVIS FastAPI backend"
+        },
+        "jarvis.enableInlineCompletion": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Copilot-style ghost text code completions"
+        },
+        "jarvis.trustMode": {
+          "type": "string",
+          "enum": [
+            "full",
+            "confirm_destructive"
+          ],
+          "default": "full",
+          "description": "Autonomous actions trust mode"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "package": "vsce package --no-dependencies"
+  },
+  "files": [
+    "extension.js",
+    "media/**"
+  ],
+  "license": "MIT"
+}
